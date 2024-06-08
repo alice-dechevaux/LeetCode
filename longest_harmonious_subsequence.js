@@ -38,7 +38,6 @@ var findLHS = function(nums) {
     
     nums.forEach((x) => {
         if (counts[x] + counts[x + 1] > max) max = counts[x] + counts[x + 1];
-        if (counts[x] + counts[x - 1] > max) max = counts[x] + counts[x - 1];
     })
 
     return max;
